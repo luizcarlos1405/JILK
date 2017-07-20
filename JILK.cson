@@ -1,0 +1,78 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#_customizing_keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on OS X and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'body atom-workspace atom-text-editor:not([mini])':
+
+	# Move
+
+	'ctrl-alt-j': 'core:move-left'
+	'ctrl-alt-i': 'core:move-up'
+	'ctrl-alt-l': 'core:move-right'
+	'ctrl-alt-k': 'core:move-down'
+	'ctrl-alt-u': 'editor:move-to-beginning-of-word'
+	'ctrl-alt-o': 'editor:move-to-end-of-word'
+	'ctrl-alt-ç': 'editor:move-to-end-of-screen-line'
+	'ctrl-alt-p': 'editor:move-to-first-character-of-line'
+	'ctrl-alt-shift-i': 'editor:move-line-up'
+	'ctrl-alt-shift-k': 'editor:move-line-down'
+    # 'ctrl-`': 'platformio-ide-terminal:toggle'
+
+	# Delete
+
+	'ctrl-j': 'core:backspace'
+	'ctrl-l': 'core:delete'
+	'ctrl-u': 'editor:delete-to-beginning-of-word'
+	'ctrl-o': 'editor:delete-to-end-of-word'
+	'ctrl-p': 'editor:delete-line'
+
+	# Select
+
+	'alt-shift-j': 'core:select-left'
+	'alt-shift-l': 'core:select-right'
+	'alt-shift-i': 'core:select-up'
+	'alt-shift-k': 'core:select-down'
+	'alt-shift-u': 'editor:select-to-beginning-of-word'
+	'alt-shift-o': 'editor:select-to-end-of-word'
+	'alt-shift-p': 'editor:add-selection-above'
+	'alt-shift-ç': 'editor:add-selection-below'
+	'ctrl-alt-shift-l': 'editor:select-line'
+
+	# Miscelaneous
+
+	'shift-enter': 'editor:newline-above'
+	'ctrl-shift-c': 'editor:toggle-line-comments'
+	'ctrl-1': 'platformio-ide-terminal:toggle'
+
+'.platform-linux atom-text-editor':
+    'ctrl-alt-shift-s': 'spell-check:toggle'
+
