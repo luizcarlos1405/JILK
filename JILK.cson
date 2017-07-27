@@ -66,13 +66,21 @@
 	'alt-shift-p': 'editor:add-selection-above'
 	'alt-shift-ç': 'editor:add-selection-below'
 	'ctrl-alt-shift-l': 'editor:select-line'
+	'alt-:': 'editor:consolidate-selections'
 
 	# Miscelaneous
 
 	'shift-enter': 'editor:newline-above'
 	'ctrl-shift-c': 'editor:toggle-line-comments'
 	'ctrl-1': 'platformio-ide-terminal:toggle'
+	'ctrl-alt-,': 'platformio-ide-terminal:next'
+	'ctrl-alt-.': 'platformio-ide-terminal:prev'
+	'ctrl-alt-9': 'platformio-ide-terminal:new'
+	'ctrl-alt-0': 'platformio-ide-terminal:close'
+
+'body':
+    'ctrl-alt-w': 'pane:show-next-item'
+    'ctrl-alt-q': 'pane:show-previous-item'
 
 '.platform-linux atom-text-editor':
     'ctrl-alt-shift-s': 'spell-check:toggle'
-
