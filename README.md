@@ -1,2 +1,2 @@
 # JILK
-Shortcut system for Atom Text Editor
+My custi keymap for Atom Text Editor
