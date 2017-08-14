@@ -1,2 +1,2 @@
 # JILK
-My custi keymap for Atom Text Editor
+My custom keymap for Atom Text Editor
